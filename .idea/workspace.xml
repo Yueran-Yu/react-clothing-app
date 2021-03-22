@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2b4d09-d4f3-40ec-9168-fdc5cf6ebdac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/homepage.styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hover.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/directory/directory.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/directory/directory.data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu-item/menu-item.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/menu-item/menu-item.styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homepage.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/homepage.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homepage.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/directory.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lifecycles/src/lifecycles.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lifecycles/src/lifecycles.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/directory.styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/directory.styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/directory.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homepage.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/homepage/homepage.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homepage.styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/homepage/homepage.styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homepage.styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/homepage/homepage.styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homepage.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/homepage/homepage.styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1q5D0BHg6sGhBrHZai1xM39tVdt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -34,6 +41,12 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/directory" />
+      <recent name="$PROJECT_DIR$/src/pages/homepage" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616360331841</updated>
       <workItem from="1616360335515" duration="29000" />
-      <workItem from="1616360368894" duration="4033000" />
+      <workItem from="1616360368894" duration="10444000" />
     </task>
     <servers />
   </component>
