@@ -2,7 +2,7 @@ import React from 'react';
 import './menu-item.styles.scss'
 
 // destructing the props
-const MenuItem = ({title, img, size}) => (
+const MenuItem = ({title, img, size, history}) => (
     <div className={`${size} menu-item`}>
       <div className='background-image'
            style={{backgroundImage: `url(${img})`}}/>
