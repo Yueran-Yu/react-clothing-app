@@ -3,8 +3,8 @@ import './menu-item.styles.scss';
 import { withRouter } from 'react-router-dom';
 
 // destructing the props
-const MenuItem = ({title, img, size, history}) => (
-    <div className={`${size} menu-item`} onClick={() => history.push()}>
+const MenuItem = ({title, img, size, history, linkUrl, match}) => (
+    <div className={`${size} menu-item`} onClick={()=> history.push(`${match.url}${linkUrl}`)}>
       <div className='background-image'
            style={{backgroundImage: `url(${img})`}}/>
       <div className='content'>
