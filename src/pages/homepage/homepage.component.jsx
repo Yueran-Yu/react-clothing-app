@@ -7,4 +7,5 @@ const HomePage = ({history}) => (
       <Directory history={history}/>
     </div>
 )
+
 export default HomePage;
