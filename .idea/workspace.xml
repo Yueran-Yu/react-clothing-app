@@ -4,7 +4,21 @@
     <list default="true" id="6a2b4d09-d4f3-40ec-9168-fdc5cf6ebdac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/custom-button/.sass-cache/986f34b7e6a061d244562432010005208b9101d5/custom-button.styles.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/custom-button/.sass-cache/986f34b7e6a061d244562432010005208b9101d5/custom-button.styles.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/custom-button/custom-button.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/custom-button/custom-button.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/custom-button/custom-button.styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/custom-button/custom-button.styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/custom-button/custom-button.styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/custom-button/custom-button.styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/custom-button/custom-button.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/custom-button/custom-button.styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/.sass-cache/5e690011745f0adb5e26fca319178c8e5dc53b93/header.styles.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/.sass-cache/5e690011745f0adb5e26fca319178c8e5dc53b93/header.styles.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-in/.sass-cache/25850a7c144e7ea010cb3ad00613e0ba730264a2/sign-in.styles.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in/.sass-cache/25850a7c144e7ea010cb3ad00613e0ba730264a2/sign-in.styles.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sign-in/sign-in.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in/sign-in.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-in/sign-in.styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in/sign-in.styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-in/sign-in.styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in/sign-in.styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-in/sign-in.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in/sign-in.styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../router-example/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../router-example/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +72,7 @@
       <workItem from="1616981803767" duration="1642000" />
       <workItem from="1617421423685" duration="3553000" />
       <workItem from="1617486327606" duration="30518000" />
-      <workItem from="1617636209807" duration="8322000" />
+      <workItem from="1617636209807" duration="10546000" />
     </task>
     <servers />
   </component>

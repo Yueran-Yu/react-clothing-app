@@ -1,8 +1,11 @@
-.sign-up {
+.sign-in {
   display: flex;
   flex-direction: column;
   width: 380px; }
-  .sign-up .title {
+  .sign-in .title {
     margin: 10px 0; }
+  .sign-in .buttons {
+    display: flex;
+    justify-content: space-between; }
 
 /*# sourceMappingURL=sign-in.styles.css.map */
