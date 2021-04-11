@@ -14,11 +14,13 @@ class App extends React.Component {
     this.state = {
       currentUser: null
     }
+    this.unsubscribeFromAuth = null;
   }
 
-  unsubscribeFromAuth = null;
 
+  // fetch data
   componentDidMount() {
+    // onAuthStateChanged() is a method on the auth library
     this.unsubscribeFormAuth = auth.onAuthStateChanged(async user => {
       await createUserProfileDocument(user)
       console.log('****************************************')
@@ -35,11 +37,7 @@ class App extends React.Component {
         <div className="App">
           <Header currentUser={this.state.currentUser}/>
           <Switch>
-            <Route exact path='/' component={
-              HomePage
-            }
-
-            />
+            <Route exact path='/' component={HomePage}/>
             <Route path='/shop' component={ShopPage}/>
             <Route path='/signin' component={SignInAndSignUpPage}/>
           </Switch>

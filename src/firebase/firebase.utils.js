@@ -1,7 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
-import 'firebase/auth';
 
 const config = {
   apiKey: "AIzaSyBhRUmX0k4yUW0a8mFhUsYugsvHx968fSQ",
@@ -42,8 +41,11 @@ firebase.initializeApp(config);
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
-const provider = new firebase.auth.GoogleAuthProvider();
-provider.setCustomParameters({prompt: 'select_account'});
+// this gives us access to this new Google auth provider Class from this authentication library
+const googleProvider = new firebase.auth.GoogleAuthProvider();
 
-export const signInWithGoogle = () => auth.signInWithPopup(provider);
+// we want to always trigger the google pop up whenever we use this google auth provider for authentication and sign in
+googleProvider.setCustomParameters({prompt: 'select_account'});
+
+export const signInWithGoogle = () => auth.signInWithPopup(googleProvider);
 export default firebase;
