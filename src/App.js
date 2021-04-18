@@ -17,14 +17,31 @@ class App extends React.Component {
     this.unsubscribeFromAuth = null
   }
 
-
   // fetch data
   componentDidMount() {
     // onAuthStateChanged() is a method on the auth library
-    this.unsubscribeFormAuth = auth.onAuthStateChanged(async user => {
-      await createUserProfileDocument(user)
-      console.log('****************************************')
-      console.log(user);
+    this.unsubscribeFormAuth = auth.onAuthStateChanged(async userAuth => {
+      if (userAuth) {
+        const userRef = await createUserProfileDocument(userAuth)
+
+        // we will get  back a snapShot object through onSnapshot method
+        userRef.onSnapshot(snapshot => {
+          console.log(snapshot.data())
+
+          // setState is a asynchronous, the second parameter of setState() is the way to log out the result
+          this.setState({
+            currentUser: {
+              id: snapshot.id,
+              ...snapshot.data()
+            }
+          }, () => {
+            console.log(this.state)
+          })
+        })
+
+      } else {
+        this.setState({currentUser: userAuth})
+      }
     })
   }
 
