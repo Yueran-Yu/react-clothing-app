@@ -21,13 +21,13 @@ class SignUp extends React.Component {
     event.preventDefault()
     const {displayName, email, password, confirmPassword} = this.state;
     if (password !== confirmPassword) {
-         alert(`password don't match`)
+      alert(`password don't match`)
       return
     }
 
-    try{
-      const {user}  = await auth.createUserWithEmailAndPassword(email, password)
-    }catch(error){
+    try {
+      const {user} = await auth.createUserWithEmailAndPassword(email, password)
+    } catch (error) {
     }
   }
 
