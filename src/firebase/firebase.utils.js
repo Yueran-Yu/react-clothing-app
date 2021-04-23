@@ -23,6 +23,10 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   console.log(snapShot)
 
   if (!snapShot.exists) {
+    // if the snapShot data doesn't exist, we need to create a user
+    // In order to create a user, we have to use the documentRef object, not the snapshot.
+    // The snapshot simply represents the data.
+    // Any methods of creating, getting, updating or deleting, we have to use the documentRef objects.
     const {displayName, email} = userAuth
     const createdAt = new Date()
 
