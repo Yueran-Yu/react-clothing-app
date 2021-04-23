@@ -11,6 +11,7 @@ const config = {
   appId: "1:804778767924:web:210bae83d75690f6dabc61"
 };
 
+// additionalData will come in the format of an object
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
   /* we get the users by calling either
