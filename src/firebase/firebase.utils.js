@@ -18,6 +18,8 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   firestore.doc('/users/:userId');
   firestore.collections('/users')
   */
+
+
   const userRef = firestore.doc(`users/${userAuth.uid}`)
   const snapShot = await userRef.get()
   console.log(snapShot)
@@ -29,14 +31,11 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     // Any methods of creating, getting, updating or deleting, we have to use the documentRef objects.
     const {displayName, email} = userAuth
     const createdAt = new Date()
+    const y = { email, displayName, createdAt, ...additionalData}
+    console.log(y)
 
     try {
-      await userRef.set({
-        email,
-        displayName,
-        createdAt,
-        ...additionalData
-      })
+      await userRef.set(y)
     } catch (error) {
       console.log('error creating user', error.message)
     }

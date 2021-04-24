@@ -14,8 +14,9 @@ class App extends React.Component {
     this.state = {
       currentUser: null
     }
-    this.unsubscribeFromAuth = null
   }
+
+  unsubscribeFromAuth = null
 
   // fetch data
   componentDidMount() {
@@ -30,15 +31,16 @@ class App extends React.Component {
 
           // setState is a asynchronous, the second parameter of setState() is the way to log out the result
           this.setState({
-            currentUser: {
-              id: snapshot.id,
-              ...snapshot.data()
-            }
-          }
-          , () => {console.log(this.state)}
+                currentUser: {
+                  id: snapshot.id,
+                  ...snapshot.data()
+                }
+              }
+              , () => {
+                console.log(this.state)
+              }
           )
         })
-
       } else {
         this.setState({currentUser: userAuth})
       }
