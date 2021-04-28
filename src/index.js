@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import {BrowserRouter} from "react-router-dom";
 import {Provider} from 'react-redux';
+import store from './redux/store'
 
 ReactDOM.render(
     /*
@@ -12,7 +13,7 @@ ReactDOM.render(
     * that we go to put all of the actual code we want to store on our redux state.
     * It's got be the parent of everything
     * */
-    <Provider store={}>
+    <Provider store={store}>
       <BrowserRouter>
         <App/>
       </BrowserRouter>
