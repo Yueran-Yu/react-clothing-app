@@ -1,3 +1,5 @@
+// we need to update the data of reducer in App.js too
+
 import React from 'react';
 import './App.css';
 import {Switch, Route} from 'react-router-dom';
@@ -14,6 +16,8 @@ class App extends React.Component {
 
   // fetch data
   componentDidMount() {
+
+    // destructure
     const {setCurrentUser} = this.props;
 
     // onAuthStateChanged() is a method on the auth library
@@ -26,7 +30,7 @@ class App extends React.Component {
           // console.log(snapshot.data())
 
           // setState is a asynchronous, the second parameter of setState() is the way to log out the result
-          this.props.setCurrentUser({
+          setCurrentUser({
                 id: snapshot.id,
                 ...snapshot.data()
               }
@@ -61,4 +65,6 @@ class App extends React.Component {
 const mapDispatchProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 })
+
+// the first argument:null. because we don't need any state === props from our reducer
 export default connect(null, mapDispatchProps)(App);
