@@ -5,3 +5,5 @@ export const setCurrentUser = user =>({
   type: 'SET_CURRENT_USER',
   payload: user
 })
+
+// here is the user action
