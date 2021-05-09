@@ -1,5 +1,4 @@
 // we need to update the data of reducer in App.js too
-
 import React from 'react';
 import './App.css';
 import {Switch, Route} from 'react-router-dom';
@@ -13,12 +12,10 @@ import {setCurrentUser} from "./redux/user/user.actions";
 
 class App extends React.Component {
   unsubscribeFromAuth = null
-
   // fetch data
   componentDidMount() {
-
     // destructure
-    const {setCurrentUser} = this.props;
+    const {setCurrentUser} = this.props
 
     // onAuthStateChanged() is a method on the auth library
     this.unsubscribeFormAuth = auth.onAuthStateChanged(async userAuth => {
@@ -28,14 +25,10 @@ class App extends React.Component {
         // we will get  back a snapShot object through onSnapshot method
         userRef.onSnapshot(snapshot => {
           // console.log(snapshot.data())
-
           // setState is a asynchronous, the second parameter of setState() is the way to log out the result
           setCurrentUser({
                 id: snapshot.id,
                 ...snapshot.data()
-              }
-              , () => {
-                console.log(this.state)
               })
         })
       } else {
