@@ -5,6 +5,6 @@ import rootReducer from './root-reducer';
 //set up middleware
 //this configuration can be viewed on redux documentation as well
 const middlewares = [logger]
-const store = createStore(rootReducer, applyMiddleware(middlewares))
+const store = createStore(rootReducer, applyMiddleware(...middlewares))
 
 export default store;
