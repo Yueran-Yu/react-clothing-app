@@ -3,11 +3,7 @@ it gets a state object which represents the last state or an initial state.
 *
 */
 
-import {UserActionTypes} from './user.types'
-
-console.log("*******************")
-console.log(UserActionTypes.SET_CURRENT_USER)
-
+import {UserActionTypes} from './user.types';
 
 const INITIAL_STATE = {
   currentUser: null
