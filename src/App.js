@@ -24,7 +24,7 @@ class App extends React.Component {
 
         // we will get  back a snapShot object through onSnapshot method
         userRef.onSnapshot(snapshot => {
-          // console.log(snapshot.data())
+           // console.log(snapshot.data())
           // setState is a asynchronous, the second parameter of setState() is the way to log out the result
           setCurrentUser({
                 id: snapshot.id,
