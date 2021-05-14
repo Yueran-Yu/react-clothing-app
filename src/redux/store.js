@@ -8,3 +8,4 @@ const middlewares = [logger]
 const store = createStore(rootReducer, applyMiddleware(...middlewares))
 
 export default store;
+// today I have a bad mood and  bad sleep
