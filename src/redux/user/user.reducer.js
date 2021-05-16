@@ -1,6 +1,5 @@
 /* A reducer is actually just a function that gets two properties
 it gets a state object which represents the last state or an initial state.
-*
 */
 
 import {UserActionTypes} from './user.types';
@@ -22,3 +21,4 @@ const userReducer = (state = INITIAL_STATE, action) => {
 }
 
 export default userReducer;
+// Read the article of React Redux dispatch
