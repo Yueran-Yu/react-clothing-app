@@ -35,6 +35,19 @@ const Header = ({currentUser, hidden}) => (
 // the state is the rootReducer
 // const currentUser = user.currentUser, state = user.state => const {currentUser, state} = user
 // const hidden = cart.hidden
+
+/* ===>>  Original Style of the mapStateToProps
+*
+* const mapStateToProps = state => ({
+*             // We go to store file find out the rootReducer file, store === state, the key of first object in the rootReducer === state.user
+* currentUser: state.user.currentUser
+* )
+*
+*
+*
+*/
+
+
 const mapStateToProps = ({user: {currentUser}, cart: {hidden}}) => ({
   currentUser,
   hidden

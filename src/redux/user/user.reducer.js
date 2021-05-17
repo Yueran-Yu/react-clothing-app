@@ -1,7 +1,6 @@
 /* A reducer is actually just a function that gets two properties
 it gets a state object which represents the last state or an initial state.
 */
-
 import {UserActionTypes} from './user.types';
 
 const INITIAL_STATE = {
