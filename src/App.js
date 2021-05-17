@@ -63,6 +63,7 @@ const mapStateToProps = ({user}) => (
 )
 
 const mapDispatchProps = dispatch => ({
+                  // where is this user come from????
   setCurrentUser: user => dispatch(setCurrentUser(user))
 })
 
