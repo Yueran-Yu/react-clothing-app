@@ -69,5 +69,3 @@ const mapDispatchProps = dispatch => ({
 
 // the first argument:null. because we don't need any state === props from our reducer
 export default connect(mapStateToProps, mapDispatchProps)(App);
-
-// reading the articles about Redux
