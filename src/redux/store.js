@@ -8,4 +8,4 @@ const middlewares = [logger]
 const store = createStore(rootReducer, applyMiddleware(...middlewares))
 
 export default store;
-// read the fundamental tutoral
+// read the fundamental tutorial
