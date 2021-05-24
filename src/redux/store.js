@@ -9,3 +9,6 @@ const store = createStore(rootReducer, applyMiddleware(...middlewares))
 
 export default store;
 // read the fundamental tutorial
+// Reading: What is a Redux selector?
+// Reading: Why Not To Modify React State Directly
+// Reading: Immutability in React and Redux: The Complete Guide
