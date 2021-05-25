@@ -12,3 +12,6 @@ export const selectCartItemsCount = createSelector(
     [selectCartItems],
     cartItems =>
 cartItems.reduce((accumalatedQuantity, cartItem)=> accumalatedQuantity + cartItem.quantity, 0))
+
+
+// Reading: Redux Selectors: A Quick Tutorial
