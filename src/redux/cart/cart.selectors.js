@@ -16,3 +16,10 @@ cartItems.reduce((accumalatedQuantity, cartItem)=> accumalatedQuantity + cartIte
 
 // Reading: Redux Selectors: A Quick Tutorial
 // Reading: You Might Not Need The mapDispatchToProps Function
+
+//1 connect the component to redux
+//2 mapStateToProps
+//3 Create the store
+//4 Create a reducer
+//5 Provide the store to the app
+//6 wire up actions
