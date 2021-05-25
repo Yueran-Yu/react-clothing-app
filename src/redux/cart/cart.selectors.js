@@ -15,3 +15,4 @@ cartItems.reduce((accumalatedQuantity, cartItem)=> accumalatedQuantity + cartIte
 
 
 // Reading: Redux Selectors: A Quick Tutorial
+// Reading: You Might Not Need The mapDispatchToProps Function
