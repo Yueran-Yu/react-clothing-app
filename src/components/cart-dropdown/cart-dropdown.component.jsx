@@ -18,6 +18,11 @@ const CartDropDown = ({cartItems}) => (
 
 // by using select we do not need to re-render
 // which helps save us on performance
+
+/* const mapStateToProps = ({cart:{cartItems}}) =>({
+*    cartItems
+* })
+*/
 const mapStateToProps = state => ({
   cartItems:selectCartItems(state)
 })

@@ -7,12 +7,13 @@ import {selectCartItemsCount} from "../../redux/cart/cart.selectors";
 
 const CartIcon = ({itemsCount, toggleCartHidden}) => (
     <div className='cart-icon' onClick={toggleCartHidden}>
-      <ShoppingIcon className='shopping-icon' />
+      <ShoppingIcon className='shopping-icon'/>
       <span className='item-count'>{itemsCount}</span>
     </div>
 )
 
-const mapStateToProps = state =>({
+const mapStateToProps = state => ({
+  // itemsCount: cartItems.reduce((totalQuantity,cartItem.quantity)=>totalQuantity+cartItem , 0)
   itemsCount: selectCartItemsCount(state)
 })
 
