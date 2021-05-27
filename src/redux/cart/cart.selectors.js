@@ -1,4 +1,5 @@
 import {createSelector} from 'reselect';
+// import cartItem from "../../components/cart-item/cart-item.component";
 
 // input selector
 const selectCart = state => state.cart;
@@ -18,6 +19,11 @@ export const selectCartItemsCount = createSelector(
     cartItems =>
         cartItems.reduce((accumalatedQuantity, cartItem) => accumalatedQuantity + cartItem.quantity, 0))
 
+export const selectCartTotal = createSelector(
+    [selectCartItems],
+    cartItems =>
+        cartItems.reduce((accumalatedQuantity, cartItem) => accumalatedQuantity + cartItem.quantity * cartItem.price, 0)
+)
 
 // Reading: Redux Selectors: A Quick Tutorial
 // Reading: You Might Not Need The mapDispatchToProps Function
