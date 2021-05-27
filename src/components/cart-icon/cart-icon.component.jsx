@@ -12,7 +12,6 @@ const CartIcon = ({itemsCount, toggleCartHidden}) => (
       <span className='item-count'>{itemsCount}</span>
     </div>
 )
-
 // const mapStateToProps = state => ({
 //   // itemsCount: cartItems.reduce((totalQuantity,cartItem.quantity)=>totalQuantity+cartItem , 0)
 //   itemsCount: selectCartItemsCount(state)

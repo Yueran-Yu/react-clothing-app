@@ -4,13 +4,18 @@ import './App.css';
 import {Switch, Route, Redirect} from 'react-router-dom';
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
-import {connect} from 'react-redux';
 import SignInAndSignUpPage from "./pages/sign-in-sign-up/sign-in-sign-up.component";
+// import CheckoutPage from "./pages/checkout/checkout.component";
+
+import {connect} from 'react-redux';
+
 import Header from './components/header/header.component';
 import {auth, createUserProfileDocument} from './firebase/firebase.utils.js';
 import {setCurrentUser} from "./redux/user/user.actions";
 import {selectCurrentUser} from './redux/user/user.selectors';
 import {createStructuredSelector} from "reselect";
+import CheckoutPage from "./pages/checkout/checkout.component";
+
 
 class App extends React.Component {
   unsubscribeFromAuth = null
@@ -51,6 +56,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path='/' component={HomePage}/>
             <Route path='/shop' component={ShopPage}/>
+            <Route exact path='/checkout' component={CheckoutPage}/>
             <Route exact path='/signin'
                    // the spell mistake no warning
                    render={() => this.props.currentUser ? (<Redirect to='/'/>) : (<SignInAndSignUpPage/>)}/>
