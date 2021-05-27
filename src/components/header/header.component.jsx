@@ -5,7 +5,10 @@ import {Link} from 'react-router-dom';
 import {ReactComponent as Logo} from '../../assets/crown.svg';
 import {auth} from '../../firebase/firebase.utils.js';
 import CartIcon from "../cart-icon/cart-icon.component";
-import CartDropDown from '../cart-dropdown/cart-dropdown.component'
+import CartDropDown from '../cart-dropdown/cart-dropdown.component';
+import {createStructuredSelector} from 'reselect';
+import {selectCartHidden} from '../../redux/cart/cart.selectors';
+import {selectCurrentUser} from '../../redux/user/user.selectors';
 
 const Header = ({currentUser, hidden}) => (
     <div className='header'>
@@ -27,7 +30,7 @@ const Header = ({currentUser, hidden}) => (
         <CartIcon/>
       </div>
       {
-        hidden ? null : <CartDropDown />
+        hidden ? null : <CartDropDown/>
       }
     </div>
 )
@@ -44,9 +47,19 @@ const Header = ({currentUser, hidden}) => (
 * )
 */
 
-const mapStateToProps = ({user: {currentUser}, cart: {hidden}}) => ({
-  currentUser,
-  hidden
+
+// const mapStateToProps = (state) => ({
+//   currentUser: selectCurrentUser(state),
+//   hidden: selectCartHidden(state)
+// })
+//  transform to the below structure
+
+
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+  hidden: selectCartHidden
 })
+
+
 export default connect(mapStateToProps)(Header);
 // need to read more document

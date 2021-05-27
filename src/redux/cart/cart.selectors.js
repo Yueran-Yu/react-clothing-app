@@ -6,17 +6,21 @@ const selectCart = state => state.cart;
 // output selector
 export const selectCartItems = createSelector(
     [selectCart],
-    cart => cart.cartItems)
+    cart => cart.cartItems
+)
+
+export const selectCartHidden = createSelector(
+    [selectCart],
+    cart => cart.hidden)
 
 export const selectCartItemsCount = createSelector(
     [selectCartItems],
     cartItems =>
-cartItems.reduce((accumalatedQuantity, cartItem)=> accumalatedQuantity + cartItem.quantity, 0))
+        cartItems.reduce((accumalatedQuantity, cartItem) => accumalatedQuantity + cartItem.quantity, 0))
 
 
 // Reading: Redux Selectors: A Quick Tutorial
 // Reading: You Might Not Need The mapDispatchToProps Function
-
 //1 connect the component to redux
 //2 mapStateToProps
 //3 Create the store
