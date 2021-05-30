@@ -7,6 +7,7 @@ import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
 import {store, persistor} from './redux/store.js'
 
+
 ReactDOM.render(
     /*
     * The provider is a component that is a parent of everything inside of our application.

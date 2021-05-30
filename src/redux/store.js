@@ -3,7 +3,6 @@ import logger from 'redux-logger';
 import rootReducer from './root-reducer.js';
 import {persistStore} from "redux-persist";
 
-
 //set up middleware
 //this configuration can be viewed on redux documentation as well
 const middlewares = [logger]
