@@ -10,3 +10,4 @@ const CategoryPage = ({match}) => (
 )
 
 export default CategoryPage;
+// update
