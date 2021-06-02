@@ -55,6 +55,7 @@ class App extends React.Component {
           <Header/>
           <Switch>
             <Route exact path='/' component={HomePage}/>
+            {/* Route passes the 3 props to the component */}
             <Route path='/shop' component={ShopPage}/>
             <Route exact path='/checkout' component={CheckoutPage}/>
             <Route exact path='/signin'
