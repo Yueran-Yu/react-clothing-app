@@ -9,5 +9,13 @@ const CollectionPage = ({match}) => (
     </div>
 )
 
+const mapStateToProps = (state, ownProps) => ({
+
+})
 export default CollectionPage;
-// In our case, Collection aligns better with our component tree naming: ShopPage > CollectionPage > CollectionItem
+// In our case, Collection
+// aligns better with our component tree naming: ShopPage > CollectionPage > CollectionItem
+
+
+
+
