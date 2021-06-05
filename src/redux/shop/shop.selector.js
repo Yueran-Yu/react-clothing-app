@@ -4,9 +4,10 @@ const COLLECTION_ID_MAP = {
   hats: 1,
   sneakers: 2,
   jackets: 3,
-  women: 4,
-  men: 5
+  womens: 4,
+  mens: 5
 }
+
 
 const selectShop = state => state.shop;
 
@@ -22,5 +23,4 @@ export const selectCollection = collectionUrlParam => (
             collections.find(collection => collection.id === COLLECTION_ID_MAP[collectionUrlParam])
     )
 )
-
 

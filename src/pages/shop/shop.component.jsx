@@ -3,8 +3,8 @@ import {Route} from 'react-router-dom';
 import CollectionsOverview from "../../components/collections-overview/collections-overview.component";
 import CollectionPage from "../collection/collection.component";
 
+
 const ShopPage = ({match}) => {
-  console.log(match)
   return (
       <div className='shop-page'>
         {/* /shop/:category */}
