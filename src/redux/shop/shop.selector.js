@@ -9,7 +9,8 @@ export const selectCollections = createSelector(
 
 // convert an object into an array
 export const selectCollectionsForPreview = createSelector(
-    [selectCollections]
+    [selectCollections],
+    collections => Object.keys(collections).map(key=>collections[key])
 )
 
 export const selectCollection = collectionUrlParam => (
@@ -19,6 +20,7 @@ export const selectCollection = collectionUrlParam => (
             collections[collectionUrlParam]
     )
 )
+
 
 
 const testObject = {a: 1, b:2, c:3}
