@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2b4d09-d4f3-40ec-9168-fdc5cf6ebdac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/stripe-button/stripe-button.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/stripe-button/stripe-button.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stripe-button/stripe-button.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/checkout/checkout.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout/checkout.component.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../router-example/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../router-example/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +93,7 @@
       <workItem from="1622251438642" duration="20418000" />
       <workItem from="1622661686349" duration="13193000" />
       <workItem from="1622935661928" duration="5131000" />
-      <workItem from="1622956208453" duration="4522000" />
+      <workItem from="1622956208453" duration="5419000" />
     </task>
     <servers />
   </component>
