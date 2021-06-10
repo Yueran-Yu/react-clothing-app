@@ -21,8 +21,9 @@
     margin-left: auto;
     font-size: 36px; }
   .checkout-page button {
-    margin-left: atuo;
-    margin-top: 50px; }
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 50px; }
   .checkout-page .test-warning {
     text-align: center;
     margin-top: 40px;
