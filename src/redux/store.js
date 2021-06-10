@@ -5,7 +5,12 @@ import {persistStore} from "redux-persist";
 
 //set up middleware
 //this configuration can be viewed on redux documentation as well
-const middlewares = [logger]
+const middlewares = []
+
+if (process.env.NODE_ENV === 'development') {
+  middlewares.push(logger)
+}
+
 const store = createStore(rootReducer, applyMiddleware(...middlewares))
 const persistor = persistStore(store)
 
