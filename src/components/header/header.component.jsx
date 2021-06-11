@@ -1,6 +1,5 @@
 import React from 'react';
 import {connect} from 'react-redux'
-import {Link} from 'react-router-dom';
 import {ReactComponent as Logo} from '../../assets/crown.svg';
 import {auth} from '../../firebase/firebase.utils.js';
 import CartIcon from "../cart-icon/cart-icon.component";
@@ -8,8 +7,7 @@ import CartDropDown from '../cart-dropdown/cart-dropdown.component';
 import {createStructuredSelector} from 'reselect';
 import {selectCartHidden} from '../../redux/cart/cart.selectors';
 import {selectCurrentUser} from '../../redux/user/user.selectors';
-import {HeaderContainer, LogoContainer, OptionLink, OptionDiv, OptionsContainer} from "./header.styles";
-
+import {HeaderContainer, LogoContainer, OptionLink, OptionsContainer} from "./header.styles";
 
 const Header = ({currentUser, hidden}) => (
     <HeaderContainer>
@@ -20,12 +18,12 @@ const Header = ({currentUser, hidden}) => (
         <OptionLink to='/shop'>
           SHOP
         </OptionLink>
-        <OptionDiv to='/shop'>
+        <OptionLink as='div' to='/shop'>
           CONTACT
-        </OptionDiv>
+        </OptionLink>
         {
           currentUser ?
-              (<OptionDiv onClick={() => auth.signOut()}>Sign Out</OptionDiv>) :
+              (<OptionLink as='div' onClick={() => auth.signOut()}>Sign Out</OptionLink>) :
               (<OptionLink to='/signin'>SIGN IN</OptionLink>)
         }
         <CartIcon/>
