@@ -1,6 +1,7 @@
 // we need to update the data of reducer in App.js too
 import React from 'react';
 import './App.css';
+import styled from 'styled-components';
 import {Switch, Route, Redirect} from 'react-router-dom';
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
