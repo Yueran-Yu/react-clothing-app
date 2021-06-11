@@ -10,7 +10,7 @@ export const selectCollections = createSelector(
 // convert an object into an array
 export const selectCollectionsForPreview = createSelector(
     [selectCollections],
-    collections => Object.keys(collections).map(key=>collections[key])
+    collections => Object.keys(collections).map(key => collections[key])
 )
 
 export const selectCollection = collectionUrlParam => (
@@ -22,9 +22,8 @@ export const selectCollection = collectionUrlParam => (
 )
 
 
-
-const testObject = {a: 1, b:2, c:3}
-const arrayOfKeys = Object.keys(testObject)
-// result ["a","b","c"]
-// Next step is the way to get the array of values in the testObject
-const arrayofValues = arrayOfKeys.map(key => testObject[key])
+// const testObject = {a: 1, b: 2, c: 3}
+// const arrayOfKeys = Object.keys(testObject)
+// // result ["a","b","c"]
+// // Next step is the way to get the array of values in the testObject
+// const arrayofValues = arrayOfKeys.map(key => testObject[key])

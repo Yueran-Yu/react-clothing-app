@@ -1,7 +1,6 @@
 // we need to update the data of reducer in App.js too
 import React from 'react';
 import './App.css';
-import styled from 'styled-components';
 import {Switch, Route, Redirect} from 'react-router-dom';
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
@@ -52,7 +51,7 @@ class App extends React.Component {
 
   render() {
     return (
-        <div >
+        <div>
           <Header/>
           <Switch>
             <Route exact path='/' component={HomePage}/>
@@ -60,7 +59,7 @@ class App extends React.Component {
             <Route path='/shop' component={ShopPage}/>
             <Route exact path='/checkout' component={CheckoutPage}/>
             <Route exact path='/signin'
-                   // the spell mistake no warning
+                // the spell mistake no warning
                    render={() => this.props.currentUser ? (<Redirect to='/'/>) : (<SignInAndSignUpPage/>)}/>
           </Switch>
         </div>
@@ -73,13 +72,13 @@ class App extends React.Component {
 // )
 // before using createStructuredSelector
 
-const mapStateToProps =createStructuredSelector({
+const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser
 })
 
 
 const mapDispatchProps = dispatch => ({
-                  // where is this user come from????
+  // where is this user come from????
   setCurrentUser: user => dispatch(setCurrentUser(user))
 })
 
