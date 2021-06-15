@@ -10,7 +10,7 @@ const ShopPage = ({match}) => {
         {/* /shop/:category */}
         < Route exact path={`${match.path}`} component={CollectionsOverview}/>
         {/* This makes it more flexible if we want to reuse it in another place! */}
-        < Route path={`${match.path}/:collectionId`} component={CollectionPage}/>
+        < Route path={`${match.path}/:collectionId`} component={CollectionPage} />
       </div>
   )
 }
