@@ -11,6 +11,9 @@ const config = {
   appId: "1:804778767924:web:210bae83d75690f6dabc61"
 };
 
+firebase.initializeApp(config);
+
+
 // additionalData will come in the format of an object
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
@@ -19,10 +22,10 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   firestore.collections('/users')
   */
 
-
   const userRef = firestore.doc(`users/${userAuth.uid}`)
   const snapShot = await userRef.get()
   console.log(snapShot)
+
 
   if (!snapShot.exists) {
     // if the snapShot data doesn't exist, we need to create a user
@@ -31,7 +34,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     // Any methods of creating, getting, updating or deleting, we have to use the documentRef objects.
     const {displayName, email} = userAuth
     const createdAt = new Date()
-    const y = { email, displayName, createdAt, ...additionalData}
+    const y = {email, displayName, createdAt, ...additionalData}
     console.log(y)
 
     try {
@@ -43,7 +46,19 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   return userRef;
 }
 
-firebase.initializeApp(config);
+export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
+  const collectionRef = firestore.collection(collectionKey)
+  const batch = firestore.batch()
+
+  // forEach() doesn't return us a new array
+  objectsToAdd.forEach(obj => {
+    const newDocRef = collectionRef.doc()
+    batch.set(newDocRef, obj)
+  })
+  return await batch.commit()
+}
+
+
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
