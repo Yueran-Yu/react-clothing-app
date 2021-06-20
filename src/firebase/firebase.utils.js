@@ -68,8 +68,10 @@ export const convertCollectionsSnapshotToMap = (collections) => {
     }
   })
 
-  console.log("#################")
-  console.log(transformedCollection)
+  return transformedCollection.reduce((accumulator, collection) => {
+    accumulator[collection.title.toLowerCase()] = collection
+    return accumulator
+  }, {})
 }
 // this gives us access to this new Google auth provider Class from this authentication library
 const googleProvider = new firebase.auth.GoogleAuthProvider();
