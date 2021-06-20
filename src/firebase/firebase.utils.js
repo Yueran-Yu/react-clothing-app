@@ -13,7 +13,6 @@ const config = {
 
 firebase.initializeApp(config);
 
-
 // additionalData will come in the format of an object
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
@@ -25,7 +24,6 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   const userRef = firestore.doc(`users/${userAuth.uid}`)
   const snapShot = await userRef.get()
   console.log(snapShot)
-
 
   if (!snapShot.exists) {
     // if the snapShot data doesn't exist, we need to create a user
@@ -46,6 +44,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   return userRef;
 }
 
+// this is a one-time function for adding data to the firestore
 export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
   const collectionRef = firestore.collection(collectionKey)
   const batch = firestore.batch()
@@ -58,16 +57,27 @@ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => 
   return await batch.commit()
 }
 
+export const convertCollectionsSnapshotToMap = (collections) => {
+  const transformedCollection = collections.docs.map(doc => {
+    const {title, items} = doc.data()
+    return {
+      routeName: encodeURI(title.toLocaleString()),
+      id: doc.id,
+      title,
+      items
+    }
+  })
 
-export const auth = firebase.auth();
-export const firestore = firebase.firestore();
-
+  console.log("#################")
+  console.log(transformedCollection)
+}
 // this gives us access to this new Google auth provider Class from this authentication library
 const googleProvider = new firebase.auth.GoogleAuthProvider();
 
 // we want to always trigger the google pop up whenever we use this google auth provider for authentication and sign in
 googleProvider.setCustomParameters({prompt: 'select_account'});
 
+export const auth = firebase.auth();
+export const firestore = firebase.firestore();
 export const signInWithGoogle = () => auth.signInWithPopup(googleProvider);
 export default firebase;
-// add something
