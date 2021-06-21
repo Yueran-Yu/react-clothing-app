@@ -17,7 +17,6 @@ const CollectionPage = ({collection}) => {
         </div>
       </div>
   )
-
 }
 
 // ownProps come from the component
