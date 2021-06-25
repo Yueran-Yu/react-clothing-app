@@ -32,11 +32,25 @@ class ShopPage extends React.Component {
   componentDidMount() {
     const {updateCollections} = this.props
     const collectionRef = firestore.collection('collections')
-    collectionRef.onSnapshot(async snapshot => {
-      const collectionsMap = convertCollectionsSnapshotToMap(snapshot)
-      updateCollections(collectionsMap)
-      this.setState({loading: false})
-    })
+
+    // *** the SECOND WAY to get data from firestore
+    // NOT recommended, since the data structure is very complicated
+
+    // fetch('https://firestore.googleapis.com/v1/projects/crwn-db-ba912/databases/(default)/documents/collections')
+    //     .then(response => response.json())
+    //     .then(data => console.log(data))
+
+
+    // *** the FIRST WAY to get data from firestore
+    // get() makes a API call to fetch back the data associated to this collection Ref
+    // Now this is a Promise
+    collectionRef.get().then(
+        snapshot => {
+          const collectionsMap = convertCollectionsSnapshotToMap(snapshot)
+          updateCollections(collectionsMap)
+          this.setState({loading: false})
+        }
+    )
   }
 
   render() {
