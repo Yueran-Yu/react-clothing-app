@@ -22,6 +22,12 @@ export const selectCollection = collectionUrlParam => (
 )
 
 
+export const selectIsCollectionFetching = createSelector(
+    [selectShop],
+    shop => shop.isFetching
+)
+
+
 // const testObject = {a: 1, b: 2, c: 3}
 // const arrayOfKeys = Object.keys(testObject)
 // // result ["a","b","c"]
