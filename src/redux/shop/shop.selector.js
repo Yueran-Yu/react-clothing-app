@@ -28,6 +28,11 @@ export const selectIsCollectionFetching = createSelector(
 )
 
 
+export const selectIsCollectionsLoaded = createSelector(
+    [selectShop],
+    shop => !!shop.collections
+)
+
 // const testObject = {a: 1, b: 2, c: 3}
 // const arrayOfKeys = Object.keys(testObject)
 // // result ["a","b","c"]

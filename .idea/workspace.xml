@@ -2,16 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2b4d09-d4f3-40ec-9168-fdc5cf6ebdac" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/.idea/crwn-clothing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/.sass-cache/a20317ffd2453436c4561d2e87fa3a0e15ba35bf/directory.styles.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/.sass-cache/a20317ffd2453436c4561d2e87fa3a0e15ba35bf/homepage.style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/.sass-cache/a20317ffd2453436c4561d2e87fa3a0e15ba35bf/homepage.styles.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/.sass-cache/a20317ffd2453436c4561d2e87fa3a0e15ba35bf/hover.styles.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/components/directory/directory.component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/components/directory/directory.data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/components/directory/directory.styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/components/directory/directory.styles.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/components/directory/directory.styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/components/menu-item/.sass-cache/51e5ef77fef00c4a626831efa9dbadf2de85e9b0/menu-item.styles.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/components/menu-item/menu-item.component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/components/menu-item/menu-item.styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/components/menu-item/menu-item.styles.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/components/menu-item/menu-item.styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/hover.styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/hover.styles.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/hover.styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/pages/homepage/.sass-cache/64a5e3bda93fbc848b5ccc94783395e8220b0545/homepage.styles.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/pages/homepage/homepage.component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/pages/homepage/homepage.styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/pages/homepage/homepage.styles.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/pages/homepage/homepage.styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crwn-clothing/yarn.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shop/shop.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shop/shop.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/shop/shop.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/shop/shop.actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/shop/shop.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/shop/shop.reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase/firebase.utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/shop/shop.selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/shop/shop.selector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/shop/shop.types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/shop/shop.types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../router-example/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../router-example/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +82,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -113,6 +156,7 @@
       <workItem from="1623957294013" duration="22673000" />
       <workItem from="1624330566799" duration="1114000" />
       <workItem from="1624551149887" duration="9349000" />
+      <workItem from="1624848025726" duration="1849000" />
     </task>
     <servers />
   </component>
